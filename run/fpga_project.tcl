@@ -9,14 +9,7 @@ set_option -verilog_std sysv2017
 
 set_option -use_mspi_as_gpio 1
 set_option -use_sspi_as_gpio 1
-add_file -type verilog r:/Applications/Gowin/basics-graphics-music/labs/3_music/my_proj/Butterfly.v
-add_file -type verilog r:/Applications/Gowin/basics-graphics-music/labs/3_music/my_proj/DelayBuffer.v
-add_file -type verilog r:/Applications/Gowin/basics-graphics-music/labs/3_music/my_proj/FFT.v
-add_file -type verilog r:/Applications/Gowin/basics-graphics-music/labs/3_music/my_proj/lab_top.sv
-add_file -type verilog r:/Applications/Gowin/basics-graphics-music/labs/3_music/my_proj/Multiply.v
-add_file -type verilog r:/Applications/Gowin/basics-graphics-music/labs/3_music/my_proj/SdfUnit.v
-add_file -type verilog r:/Applications/Gowin/basics-graphics-music/labs/3_music/my_proj/SdfUnit2.v
-add_file -type verilog r:/Applications/Gowin/basics-graphics-music/labs/3_music/my_proj/Twiddle.v
+add_file -type verilog r:/Applications/Gowin/basics-graphics-music/labs/3_music/proj_final/lab_top.sv
 add_file -type verilog r:/Applications/Gowin/basics-graphics-music/boards/tang_nano_9k_lcd_480_272_tm1638/board_specific_top.sv
 add_file -type verilog r:/Applications/Gowin/basics-graphics-music/boards/tang_nano_9k_lcd_480_272_tm1638/gowin_rpll.v
 add_file -type verilog r:/Applications/Gowin/basics-graphics-music/peripherals/audio_pwm.sv

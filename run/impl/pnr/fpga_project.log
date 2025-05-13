@@ -1,5 +1,5 @@
-Reading netlist file: "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\gwsynthesis\fpga_project.vg"
-Parsing netlist file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\gwsynthesis\fpga_project.vg" completed
+Reading netlist file: "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\gwsynthesis\fpga_project.vg"
+Parsing netlist file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\gwsynthesis\fpga_project.vg" completed
 Processing netlist completed
 Reading constraint file: "R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific.cst"
 Physical Constraint parsed completed
@@ -20,10 +20,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\fpga_project.power.html" completed
-Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\fpga_project.pin.html" completed
-Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\fpga_project.rpt.html" completed
-Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\fpga_project.rpt.txt" completed
-Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\fpga_project.tr.html" completed
-Mon May 12 22:03:29 2025
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.power.html" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.pin.html" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.rpt.html" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.rpt.txt" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.tr.html" completed
+Tue May 13 17:04:28 2025
 

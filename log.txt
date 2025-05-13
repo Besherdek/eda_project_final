@@ -1,3 +1,34 @@
+*** GOWIN Tcl Command Line Console  *** 
+current device: GW1NR-9C  GW1NR-LV9QN88PC6/I5
+add new file: "r:/Applications/Gowin/basics-graphics-music/labs/3_music/proj_final/lab_top.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/boards/tang_nano_9k_lcd_480_272_tm1638/board_specific_top.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/boards/tang_nano_9k_lcd_480_272_tm1638/gowin_rpll.v"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/audio_pwm.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/digilent_pmod_mic3_spi_receiver.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/hub75e_led_matrix.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/i2s_audio_out.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/imitate_reset_on_power_up.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/inmp441_mic_i2s_receiver.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/inmp441_mic_i2s_receiver_alt.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/inmp441_mic_i2s_receiver_new.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/lcd_480_272.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/lcd_480_272_ml6485.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/lcd_800_480.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/sigma_delta_dac.v"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/slow_clk_gen.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/tm1638_board.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/tm1638_registers.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/tm1638_using_graphics.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/tm1638_virtual_switches.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/peripherals/vga.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/labs/common/convert.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/labs/common/counter_with_enable.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/labs/common/seven_segment_display.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/labs/common/shift_reg.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/labs/common/strobe_gen.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/labs/common/tb_lcd_display.sv"
+add new file: "r:/Applications/Gowin/basics-graphics-music/boards/tang_nano_9k_lcd_480_272_tm1638/board_specific.cst"
+add new file: "r:/Applications/Gowin/basics-graphics-music/boards/tang_nano_9k_lcd_480_272_tm1638/board_specific.sdc"
 GowinSynthesis start
 Running parser ...
 Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\lab_top.sv'
@@ -118,3 +149,32 @@ WARN  (NL0002) : The module "tm1638_registers" instantiated to "i_tm1638_regs" i
 [95%] Generate netlist file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\gwsynthesis\fpga_project.vg" completed
 [100%] Generate report file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\gwsynthesis\fpga_project_syn.rpt.html" completed
 GowinSynthesis finish
+Reading netlist file: "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\gwsynthesis\fpga_project.vg"
+Parsing netlist file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\gwsynthesis\fpga_project.vg" completed
+Processing netlist completed
+Reading constraint file: "R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.power.html" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.pin.html" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.rpt.html" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.rpt.txt" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.tr.html" completed
+Tue May 13 17:04:28 2025
+

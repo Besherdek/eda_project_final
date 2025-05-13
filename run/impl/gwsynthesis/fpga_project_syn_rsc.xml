@@ -1,43 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="board_specific_top" Lut="8" T_Register="2889(0)" T_Alu="585(0)" T_Lut="2521(8)" T_MULT18X18="12(0)" T_MULTADDALU18X18="1(0)" T_Bsram="8(0)" T_Ssram="24(0)">
+<Module name="board_specific_top" Lut="2" T_Register="191(0)" T_Alu="16(0)" T_Lut="1627(2)" T_MULTALU36X18="1(0)">
  <SubModule name="i_reset_on_power_up" Register="1" T_Register="1(1)"/>
- <SubModule name="i_lab_top" Register="2261" Alu="4" Lut="1358" MULTADDALU18X18="1" Bsram="1" T_Register="2733(2261)" T_Alu="569(4)" T_Lut="2293(1358)" T_MULT18X18="12(0)" T_MULTADDALU18X18="1(1)" T_Bsram="8(1)" T_Ssram="24(0)">
-  <SubModule name="FFT" T_Register="472(0)" T_Alu="565(0)" T_Lut="935(0)" T_MULT18X18="12(0)" T_Bsram="7(0)" T_Ssram="24(0)">
-   <SubModule name="SU1" Register="124" Alu="5" Lut="277" T_Register="154(124)" T_Alu="158(5)" T_Lut="289(277)" T_MULT18X18="4(0)" T_Bsram="4(0)">
-    <SubModule name="BF1" Alu="34" T_Alu="34(34)"/>
-    <SubModule name="DB1" Register="25" Alu="15" Lut="6" Bsram="2" T_Register="25(25)" T_Alu="15(15)" T_Lut="6(6)" T_Bsram="2(2)"/>
-    <SubModule name="BF2" Alu="68" T_Alu="68(68)"/>
-    <SubModule name="DB2" Register="5" Alu="4" Lut="6" Bsram="1" T_Register="5(5)" T_Alu="4(4)" T_Lut="6(6)" T_Bsram="1(1)"/>
-    <SubModule name="TW" Bsram="1" T_Bsram="1(1)"/>
-    <SubModule name="MU" Alu="32" MULT18X18="4" T_Alu="32(32)" T_MULT18X18="4(4)"/>
-   </SubModule>
-   <SubModule name="SU2" Register="124" Alu="3" Lut="290" T_Register="127(124)" T_Alu="171(3)" T_Lut="295(290)" T_MULT18X18="4(0)" T_Bsram="2(0)" T_Ssram="8(0)">
-    <SubModule name="BF1" Alu="68" T_Alu="68(68)"/>
-    <SubModule name="DB1" Register="3" Lut="4" Bsram="1" T_Register="3(3)" T_Lut="4(4)" T_Bsram="1(1)"/>
-    <SubModule name="BF2" Alu="68" T_Alu="68(68)"/>
-    <SubModule name="DB2" Lut="1" Ssram="8" T_Lut="1(1)" T_Ssram="8(8)"/>
-    <SubModule name="TW" Bsram="1" T_Bsram="1(1)"/>
-    <SubModule name="MU" Alu="32" MULT18X18="4" T_Alu="32(32)" T_MULT18X18="4(4)"/>
-   </SubModule>
-   <SubModule name="SU3" Register="124" Lut="285" T_Register="124(124)" T_Alu="168(0)" T_Lut="286(285)" T_MULT18X18="4(0)" T_Bsram="1(0)" T_Ssram="16(0)">
-    <SubModule name="BF1" Alu="68" T_Alu="68(68)"/>
-    <SubModule name="DB1" Lut="1" Ssram="8" T_Lut="1(1)" T_Ssram="8(8)"/>
-    <SubModule name="BF2" Alu="68" T_Alu="68(68)"/>
-    <SubModule name="DB2" Ssram="8" T_Ssram="8(8)"/>
-    <SubModule name="TW" Bsram="1" T_Bsram="1(1)"/>
-    <SubModule name="MU" Alu="32" MULT18X18="4" T_Alu="32(32)" T_MULT18X18="4(4)"/>
-   </SubModule>
-   <SubModule name="SU4" Register="35" Lut="65" T_Register="67(35)" T_Alu="68(0)" T_Lut="65(65)">
-    <SubModule name="BF" Alu="68" T_Alu="68(68)"/>
-    <SubModule name="DB" Register="32" T_Register="32(32)"/>
-   </SubModule>
-  </SubModule>
- </SubModule>
- <SubModule name="i_tm1638" Register="45" Lut="99" T_Register="65(45)" T_Lut="133(99)">
-  <SubModule name="tm1638_sio" Register="20" Lut="34" T_Register="20(20)" T_Lut="34(34)"/>
+ <SubModule name="i_lab_top" Register="61" Lut="1428" MULTALU36X18="1" T_Register="61(61)" T_Lut="1428(1428)" T_MULTALU36X18="1(1)"/>
+ <SubModule name="i_tm1638" Register="35" Lut="83" T_Register="54(35)" T_Lut="114(83)">
+  <SubModule name="tm1638_sio" Register="19" Lut="31" T_Register="19(19)" T_Lut="31(31)"/>
  </SubModule>
  <SubModule name="i_Gowin_rPLL"/>
- <SubModule name="i_lcd" Register="32" Lut="78" T_Register="32(32)" T_Lut="78(78)"/>
- <SubModule name="i_microphone" Register="50" Alu="8" Lut="9" T_Register="50(50)" T_Alu="8(8)" T_Lut="9(9)"/>
+ <SubModule name="i_lcd" Register="32" Lut="73" T_Register="32(32)" T_Lut="73(73)"/>
+ <SubModule name="i_microphone" Register="35" Alu="8" Lut="10" T_Register="35(35)" T_Alu="8(8)" T_Lut="10(10)"/>
  <SubModule name="inst_audio_out_alt" Register="8" Alu="8" T_Register="8(8)" T_Alu="8(8)"/>
 </Module>

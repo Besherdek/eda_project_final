@@ -1,8 +1,8 @@
--d R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\gwsynthesis\fpga_project.vg
+-d R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\gwsynthesis\fpga_project.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
 -cst R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific.cst
--cfg R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\device.cfg
+-cfg R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\device.cfg
 -sdc R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific.sdc
 -bit
 -tr
