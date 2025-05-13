@@ -1,0 +1,176 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Butterfly.v'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\DelayBuffer.v'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\FFT.v'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":1)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":1)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Multiply.v'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\SdfUnit.v'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\SdfUnit2.v'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Twiddle.v'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":1)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv'("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":1)
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\peripherals\lab_specific_board_config.svh'("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":2)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv'("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":2)
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\peripherals\swap_bits.svh'("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":3)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv'("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":3)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\gowin_rpll.v'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\audio_pwm.sv'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\digilent_pmod_mic3_spi_receiver.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\digilent_pmod_mic3_spi_receiver.sv":1)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\digilent_pmod_mic3_spi_receiver.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\digilent_pmod_mic3_spi_receiver.sv":1)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\hub75e_led_matrix.sv'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\i2s_audio_out.sv'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\imitate_reset_on_power_up.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\imitate_reset_on_power_up.sv":1)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\imitate_reset_on_power_up.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\imitate_reset_on_power_up.sv":1)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\inmp441_mic_i2s_receiver.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\inmp441_mic_i2s_receiver.sv":3)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\inmp441_mic_i2s_receiver.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\inmp441_mic_i2s_receiver.sv":3)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\inmp441_mic_i2s_receiver_alt.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\inmp441_mic_i2s_receiver_alt.sv":1)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\inmp441_mic_i2s_receiver_alt.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\inmp441_mic_i2s_receiver_alt.sv":1)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\inmp441_mic_i2s_receiver_new.sv'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\lcd_480_272.sv'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\lcd_480_272_ml6485.sv'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\lcd_800_480.sv'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\sigma_delta_dac.v'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\slow_clk_gen.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\slow_clk_gen.sv":3)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\slow_clk_gen.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\slow_clk_gen.sv":3)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":17)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":17)
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\peripherals\lab_specific_board_config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":18)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":18)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_registers.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_registers.sv":12)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_registers.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_registers.sv":12)
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\peripherals\lab_specific_board_config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_registers.sv":13)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_registers.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_registers.sv":13)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_using_graphics.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_using_graphics.sv":5)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_using_graphics.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_using_graphics.sv":5)
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\peripherals\lab_specific_board_config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_using_graphics.sv":6)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_using_graphics.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_using_graphics.sv":6)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_virtual_switches.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_virtual_switches.sv":1)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_virtual_switches.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_virtual_switches.sv":1)
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\peripherals\lab_specific_board_config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_virtual_switches.sv":2)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_virtual_switches.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_virtual_switches.sv":2)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\peripherals\vga.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\peripherals\vga.sv":3)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\peripherals\vga.sv'("R:\Applications\Gowin\basics-graphics-music\peripherals\vga.sv":3)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\common\convert.sv'
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\common\counter_with_enable.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\labs\common\counter_with_enable.sv":3)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\labs\common\counter_with_enable.sv'("R:\Applications\Gowin\basics-graphics-music\labs\common\counter_with_enable.sv":3)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\common\seven_segment_display.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\labs\common\seven_segment_display.sv":3)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\labs\common\seven_segment_display.sv'("R:\Applications\Gowin\basics-graphics-music\labs\common\seven_segment_display.sv":3)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\common\shift_reg.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\labs\common\shift_reg.sv":3)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\labs\common\shift_reg.sv'("R:\Applications\Gowin\basics-graphics-music\labs\common\shift_reg.sv":3)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\common\strobe_gen.sv'
+Analyzing included file 'R:\Applications\Gowin\basics-graphics-music\labs\common\config.svh'("R:\Applications\Gowin\basics-graphics-music\labs\common\strobe_gen.sv":3)
+Back to file 'R:\Applications\Gowin\basics-graphics-music\labs\common\strobe_gen.sv'("R:\Applications\Gowin\basics-graphics-music\labs\common\strobe_gen.sv":3)
+Analyzing Verilog file 'R:\Applications\Gowin\basics-graphics-music\labs\common\tb_lcd_display.sv'
+Compiling module 'board_specific_top'("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":19)
+Compiling module 'imitate_reset_on_power_up'("R:\Applications\Gowin\basics-graphics-music\peripherals\imitate_reset_on_power_up.sv":3)
+Compiling module 'slow_clk_gen(fast_clk_mhz=27,slow_clk_hz=1)'("R:\Applications\Gowin\basics-graphics-music\peripherals\slow_clk_gen.sv":5)
+Compiling module 'lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":3)
+Extracting RAM for identifier 'fft_out_re'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":164)
+Extracting RAM for identifier 'fft_out_im'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":165)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":100)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":104)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":135)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":183)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":206)
+Compiling module 'FFT'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\FFT.v":4)
+Compiling module 'SdfUnit(N=128,M=128)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\SdfUnit.v":4)
+Compiling module 'Butterfly'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Butterfly.v":4)
+Compiling module 'DelayBuffer(DEPTH=64)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\DelayBuffer.v":4)
+Compiling module 'Butterfly(RH=1)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Butterfly.v":4)
+WARN  (EX3791) : Expression size 31 truncated to fit in target size 16("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Butterfly.v":27)
+WARN  (EX3791) : Expression size 31 truncated to fit in target size 16("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Butterfly.v":28)
+WARN  (EX3791) : Expression size 31 truncated to fit in target size 16("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Butterfly.v":29)
+WARN  (EX3791) : Expression size 31 truncated to fit in target size 16("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Butterfly.v":30)
+Compiling module 'DelayBuffer'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\DelayBuffer.v":4)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 5("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\SdfUnit.v":232)
+Compiling module 'Twiddle'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Twiddle.v":4)
+Compiling module 'Multiply'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Multiply.v":4)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Multiply.v":25)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Multiply.v":26)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Multiply.v":27)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\Multiply.v":28)
+Compiling module 'SdfUnit(N=128,M=32)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\SdfUnit.v":4)
+Compiling module 'DelayBuffer(DEPTH=16)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\DelayBuffer.v":4)
+Compiling module 'DelayBuffer(DEPTH=8)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\DelayBuffer.v":4)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 5("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\SdfUnit.v":232)
+Compiling module 'SdfUnit(N=128,M=8)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\SdfUnit.v":4)
+Compiling module 'DelayBuffer(DEPTH=4)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\DelayBuffer.v":4)
+Compiling module 'DelayBuffer(DEPTH=2)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\DelayBuffer.v":4)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 5("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\SdfUnit.v":232)
+Compiling module 'SdfUnit2'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\SdfUnit2.v":4)
+Compiling module 'DelayBuffer(DEPTH=1)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\DelayBuffer.v":4)
+WARN  (EX1998) : Net 'fft_di_im[15]' does not have a driver("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":86)
+Compiling module 'tm1638_board_controller(clk_mhz=27)'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":20)
+Compiling module 'tm1638_sio(clk_mhz=27)'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":299)
+Compiling module 'tm1638_registers'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_registers.sv":15)
+WARN  (EX3791) : Expression size 21 truncated to fit in target size 20("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":185)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":189)
+Compiling module 'Gowin_rPLL'("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\gowin_rpll.v":9)
+Compiling module 'lcd_480_272'("R:\Applications\Gowin\basics-graphics-music\peripherals\lcd_480_272.sv":3)
+Compiling module 'inmp441_mic_i2s_receiver(clk_mhz=27)'("R:\Applications\Gowin\basics-graphics-music\peripherals\inmp441_mic_i2s_receiver.sv":5)
+Compiling module 'i2s_audio_out(clk_mhz=27)'("R:\Applications\Gowin\basics-graphics-music\peripherals\i2s_audio_out.sv":6)
+NOTE  (EX0101) : Current top module is "board_specific_top"
+WARN  (EX0211) : The output port "abcdefgh[7]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":36)
+WARN  (EX0211) : The output port "abcdefgh[6]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":36)
+WARN  (EX0211) : The output port "abcdefgh[5]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":36)
+WARN  (EX0211) : The output port "abcdefgh[4]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":36)
+WARN  (EX0211) : The output port "abcdefgh[3]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":36)
+WARN  (EX0211) : The output port "abcdefgh[2]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":36)
+WARN  (EX0211) : The output port "abcdefgh[1]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":36)
+WARN  (EX0211) : The output port "abcdefgh[0]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":36)
+WARN  (EX0211) : The output port "digit[7]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":37)
+WARN  (EX0211) : The output port "digit[6]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":37)
+WARN  (EX0211) : The output port "digit[5]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":37)
+WARN  (EX0211) : The output port "digit[4]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":37)
+WARN  (EX0211) : The output port "digit[3]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":37)
+WARN  (EX0211) : The output port "digit[2]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":37)
+WARN  (EX0211) : The output port "digit[1]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":37)
+WARN  (EX0211) : The output port "digit[0]" of module "lab_top(clk_mhz=27,w_key=8,w_gpio=4,screen_width=480,screen_height=272,w_red=5,w_green=6,w_blue=5)" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\lab_top.sv":37)
+WARN  (EX0211) : The output port "FLASH_CLK" of module "board_specific_top" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":104)
+WARN  (EX0211) : The output port "FLASH_CSB" of module "board_specific_top" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":105)
+WARN  (EX0211) : The output port "FLASH_MOSI" of module "board_specific_top" has no driver, assigning undriven bits to Z, simulation mismatch possible("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":106)
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input UART_RX is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":70)
+WARN  (CV0016) : Input FLASH_MISO is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":107)
+WARN  (CV0017) : Inout SMALL_LCD_CLK is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":91)
+WARN  (CV0017) : Inout SMALL_LCD_RESETN is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":92)
+WARN  (CV0017) : Inout SMALL_LCD_CS is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":93)
+WARN  (CV0017) : Inout SMALL_LCD_RS is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":94)
+WARN  (CV0017) : Inout SMALL_LCD_DATA is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":95)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "slow_clk_gen" instantiated to "i_slow_clk_gen" is swept in optimizing("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":225)
+WARN  (NL0002) : The module "tm1638_registers" instantiated to "i_tm1638_regs" is swept in optimizing("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":147)
+[95%] Generate netlist file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\gwsynthesis\fpga_project.vg" completed
+[100%] Generate report file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\gwsynthesis\fpga_project_syn.rpt.html" completed
+GowinSynthesis finish

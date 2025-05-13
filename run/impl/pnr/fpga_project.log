@@ -1,0 +1,29 @@
+Reading netlist file: "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\gwsynthesis\fpga_project.vg"
+Parsing netlist file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\gwsynthesis\fpga_project.vg" completed
+Processing netlist completed
+Reading constraint file: "R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\fpga_project.power.html" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\fpga_project.pin.html" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\fpga_project.rpt.html" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\fpga_project.rpt.txt" completed
+Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\my_proj\run\impl\pnr\fpga_project.tr.html" completed
+Mon May 12 22:03:29 2025
+
