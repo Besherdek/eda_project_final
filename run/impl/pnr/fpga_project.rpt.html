@@ -83,7 +83,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Tue May 13 17:04:28 2025
+<td>Thu May 15 13:43:38 2025
 </td>
 </tr>
 <tr>
@@ -97,24 +97,24 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">Place & Route Process</td>
 <td>Running placement:
-   Placement Phase 0: CPU time = 0h 0m 0.109s, Elapsed time = 0h 0m 0.109s
-   Placement Phase 1: CPU time = 0h 0m 0.103s, Elapsed time = 0h 0m 0.103s
-   Placement Phase 2: CPU time = 0h 0m 0.124s, Elapsed time = 0h 0m 0.124s
-   Placement Phase 3: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
-   Total Placement: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+   Placement Phase 0: CPU time = 0h 0m 0.025s, Elapsed time = 0h 0m 0.025s
+   Placement Phase 1: CPU time = 0h 0m 0.079s, Elapsed time = 0h 0m 0.079s
+   Placement Phase 2: CPU time = 0h 0m 0.029s, Elapsed time = 0h 0m 0.029s
+   Placement Phase 3: CPU time = 0h 0m 0.615s, Elapsed time = 0h 0m 0.615s
+   Total Placement: CPU time = 0h 0m 0.748s, Elapsed time = 0h 0m 0.748s
 Running routing:
-   Routing Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
-   Routing Phase 1: CPU time = 0h 0m 0.217s, Elapsed time = 0h 0m 0.217s
-   Routing Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+   Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
+   Routing Phase 1: CPU time = 0h 0m 0.119s, Elapsed time = 0h 0m 0.118s
+   Routing Phase 2: CPU time = 0h 0m 0.196s, Elapsed time = 0h 0m 0.196s
    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-   Total Routing: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+   Total Routing: CPU time = 0h 0m 0.315s, Elapsed time = 0h 0m 0.314s
 Generate output files:
-   CPU time = 0h 0m 0.47s, Elapsed time = 0h 0m 0.47s
+   CPU time = 0h 0m 0.542s, Elapsed time = 0h 0m 0.543s
 </td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s, Peak memory usage = 186MB</td>
+<td>CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 169MB</td>
 </tr>
 </table>
 <br/>
@@ -129,12 +129,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>1644/8640</td>
-<td>20%</td>
+<td>389/8640</td>
+<td>5%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
-<td>1644(1626 LUT, 18 ALU, 0 ROM16)</td>
+<td>389(341 LUT, 48 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
@@ -144,8 +144,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>191/6693</td>
-<td>3%</td>
+<td>105/6693</td>
+<td>2%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as Latch</td>
@@ -154,8 +154,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as FF</td>
-<td>188/6480</td>
-<td>3%</td>
+<td>103/6480</td>
+<td>2%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --I/O Register as Latch</td>
@@ -164,13 +164,13 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --I/O Register as FF</td>
-<td>3/213</td>
-<td>2%</td>
+<td>2/213</td>
+<td><1%</td>
 </tr>
 <tr>
 <td class="label">CLS</td>
-<td>924/4320</td>
-<td>22%</td>
+<td>212/4320</td>
+<td>5%</td>
 </tr>
 <tr>
 <td class="label">I/O Port</td>
@@ -179,12 +179,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">I/O Buf</td>
-<td>45</td>
+<td>44</td>
 <td>-</td>
 </tr>
 <tr>
 <td class="label"> &nbsp &nbsp --Input Buf</td>
-<td>4</td>
+<td>3</td>
 <td>-</td>
 </tr>
 <tr>
@@ -199,7 +199,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">DSP</td>
-<td>1 MULTALU36X18<br/></td><td>10%</td>
+<td>2 MULT18X18<br/></td><td>10%</td>
 </tr>
 </table>
 <h2><a name="I/O_Bank_Usage_Summary">I/O Bank Usage Summary:</a></h2>
@@ -236,8 +236,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">LW</td>
-<td>1/8</td>
-<td>13%</td>
+<td>0/8</td>
+<td>0%</td>
 </tr>
 <tr>
 <td class="label">GCLK_PIN</td>
@@ -261,17 +261,12 @@ Generate output files:
 <tr>
 <td class="label">CLK_d</td>
 <td>PRIMARY</td>
-<td> TR TL BR BL</td>
+<td> TR BL</td>
 </tr>
 <tr>
 <td class="label">LARGE_LCD_CK_d</td>
 <td>PRIMARY</td>
 <td> BR BL</td>
-</tr>
-<tr>
-<td class="label">rst</td>
-<td>LW</td>
-<td> -</td>
 </tr>
 </table>
 <br/>
@@ -1065,11 +1060,11 @@ Generate output files:
 <td>IOB33[A]</td>
 <td>-</td>
 <td>LVCMOS18</td>
-<td>NA</td>
+<td>8</td>
 <td>UP</td>
-<td>ON</td>
-<td>NONE</td>
 <td>NA</td>
+<td>NONE</td>
+<td>OFF</td>
 <td>NA</td>
 <td>NA</td>
 <td>NA</td>
@@ -1971,15 +1966,15 @@ Generate output files:
 <tr>
 <td class="label">39/2</td>
 <td>TF_MISO</td>
-<td>in</td>
+<td>io</td>
 <td>IOB33[A]</td>
 <td>-</td>
 <td>LVCMOS18</td>
-<td>NA</td>
+<td>8</td>
 <td>UP</td>
-<td>ON</td>
-<td>NONE</td>
 <td>NA</td>
+<td>NONE</td>
+<td>OFF</td>
 <td>NA</td>
 <td>NA</td>
 <td>NA</td>

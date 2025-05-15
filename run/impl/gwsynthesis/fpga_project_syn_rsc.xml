@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="board_specific_top" Lut="2" T_Register="191(0)" T_Alu="16(0)" T_Lut="1627(2)" T_MULTALU36X18="1(0)">
+<Module name="board_specific_top" Lut="2" T_Register="105(0)" T_Alu="44(0)" T_Lut="342(2)" T_MULT18X18="2(0)">
  <SubModule name="i_reset_on_power_up" Register="1" T_Register="1(1)"/>
- <SubModule name="i_lab_top" Register="61" Lut="1428" MULTALU36X18="1" T_Register="61(61)" T_Lut="1428(1428)" T_MULTALU36X18="1(1)"/>
- <SubModule name="i_tm1638" Register="35" Lut="83" T_Register="54(35)" T_Lut="114(83)">
-  <SubModule name="tm1638_sio" Register="19" Lut="31" T_Register="19(19)" T_Lut="31(31)"/>
+ <SubModule name="i_lab_top" Alu="28" Lut="149" MULT18X18="2" T_Alu="28(28)" T_Lut="149(149)" T_MULT18X18="2(2)"/>
+ <SubModule name="i_tm1638" Register="35" Lut="84" T_Register="54(35)" T_Lut="116(84)">
+  <SubModule name="tm1638_sio" Register="19" Lut="32" T_Register="19(19)" T_Lut="32(32)"/>
  </SubModule>
  <SubModule name="i_Gowin_rPLL"/>
- <SubModule name="i_lcd" Register="32" Lut="73" T_Register="32(32)" T_Lut="73(73)"/>
- <SubModule name="i_microphone" Register="35" Alu="8" Lut="10" T_Register="35(35)" T_Alu="8(8)" T_Lut="10(10)"/>
+ <SubModule name="i_lcd" Register="32" Lut="70" T_Register="32(32)" T_Lut="70(70)"/>
+ <SubModule name="i_microphone" Register="10" Alu="8" Lut="5" T_Register="10(10)" T_Alu="8(8)" T_Lut="5(5)"/>
  <SubModule name="inst_audio_out_alt" Register="8" Alu="8" T_Register="8(8)" T_Alu="8(8)"/>
 </Module>

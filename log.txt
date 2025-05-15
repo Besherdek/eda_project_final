@@ -107,7 +107,9 @@ Compiling module 'imitate_reset_on_power_up'("R:\Applications\Gowin\basics-graph
 Compiling module 'slow_clk_gen(fast_clk_mhz=27,slow_clk_hz=1)'("R:\Applications\Gowin\basics-graphics-music\peripherals\slow_clk_gen.sv":5)
 Compiling module 'lab_top(clk_mhz=27,w_key=8,w_gpio=4,w_green=6)'("R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\lab_top.sv":3)
 WARN  (EX3791) : Expression size 32 truncated to fit in target size 19("R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\lab_top.sv":121)
-WARN  (EX3791) : Expression size 19 truncated to fit in target size 18("R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\lab_top.sv":151)
+WARN  (EX3791) : Expression size 20 truncated to fit in target size 19("R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\lab_top.sv":147)
+WARN  (EX2420) : Latch inferred for net 'fret_1[5]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\lab_top.sv":208)
+WARN  (EX3101) : 'fret_1' inside always_comb block does not represent combinational logic("R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\lab_top.sv":208)
 Compiling module 'tm1638_board_controller(clk_mhz=27)'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":20)
 Compiling module 'tm1638_sio(clk_mhz=27)'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_board.sv":299)
 Compiling module 'tm1638_registers'("R:\Applications\Gowin\basics-graphics-music\peripherals\tm1638_registers.sv":15)
@@ -124,6 +126,7 @@ WARN  (EX0211) : The output port "FLASH_MOSI" of module "board_specific_top" has
 [5%] Running netlist conversion ...
 WARN  (CV0016) : Input UART_RX is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":70)
 WARN  (CV0016) : Input FLASH_MISO is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":107)
+WARN  (CV0017) : Inout TF_MISO is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":80)
 WARN  (CV0017) : Inout SMALL_LCD_CLK is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":91)
 WARN  (CV0017) : Inout SMALL_LCD_RESETN is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":92)
 WARN  (CV0017) : Inout SMALL_LCD_CS is unused("R:\Applications\Gowin\basics-graphics-music\boards\tang_nano_9k_lcd_480_272_tm1638\board_specific_top.sv":93)
@@ -176,5 +179,5 @@ Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_fin
 Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.rpt.html" completed
 Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.rpt.txt" completed
 Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.tr.html" completed
-Tue May 13 17:04:28 2025
+Thu May 15 13:43:38 2025
 

@@ -12,27 +12,27 @@
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9
   <Device Version>: C
-  <Created Time>:Tue May 13 17:04:28 2025
+  <Created Time>:Thu May 15 13:43:38 2025
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.109s, Elapsed time = 0h 0m 0.109s
-    Placement Phase 1: CPU time = 0h 0m 0.103s, Elapsed time = 0h 0m 0.103s
-    Placement Phase 2: CPU time = 0h 0m 0.124s, Elapsed time = 0h 0m 0.124s
-    Placement Phase 3: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
-    Total Placement: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+    Placement Phase 0: CPU time = 0h 0m 0.025s, Elapsed time = 0h 0m 0.025s
+    Placement Phase 1: CPU time = 0h 0m 0.079s, Elapsed time = 0h 0m 0.079s
+    Placement Phase 2: CPU time = 0h 0m 0.029s, Elapsed time = 0h 0m 0.029s
+    Placement Phase 3: CPU time = 0h 0m 0.615s, Elapsed time = 0h 0m 0.615s
+    Total Placement: CPU time = 0h 0m 0.748s, Elapsed time = 0h 0m 0.748s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
-    Routing Phase 1: CPU time = 0h 0m 0.217s, Elapsed time = 0h 0m 0.217s
-    Routing Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
+    Routing Phase 1: CPU time = 0h 0m 0.119s, Elapsed time = 0h 0m 0.118s
+    Routing Phase 2: CPU time = 0h 0m 0.196s, Elapsed time = 0h 0m 0.196s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Total Routing: CPU time = 0h 0m 0.315s, Elapsed time = 0h 0m 0.314s
  Generate output files:
-    CPU time = 0h 0m 0.47s, Elapsed time = 0h 0m 0.47s
+    CPU time = 0h 0m 0.542s, Elapsed time = 0h 0m 0.543s
 
- Total Time and Memory Usage: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s, Peak memory usage = 186MB
+ Total Time and Memory Usage: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 169MB
 
 
 3. Resource Usage Summary
@@ -40,22 +40,22 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 1644/8640                           |  20%
-    --LUT,ALU,ROM16           | 1644(1626 LUT, 18 ALU, 0 ROM16)     | -
+  Logic                       | 389/8640                            |  5%
+    --LUT,ALU,ROM16           | 389(341 LUT, 48 ALU, 0 ROM16)       | -
     --SSRAM(RAM16)            | 0                                   | -
-  Register                    | 191/6693                            |  3%
+  Register                    | 105/6693                            |  2%
     --Logic Register as Latch | 0/6480                              |  0%
-    --Logic Register as FF    | 188/6480                            |  3%
+    --Logic Register as FF    | 103/6480                            |  2%
     --I/O Register as Latch   | 0/213                               |  0%
-    --I/O Register as FF      | 3/213                               |  2%
-  CLS                         | 924/4320                            |  22%
+    --I/O Register as FF      | 2/213                               |  <1%
+  CLS                         | 212/4320                            |  5%
   I/O Port                    | 52/71                               |  74%
-  I/O Buf                     | 45                                  | -
-    --Input Buf               | 4                                   | -
+  I/O Buf                     | 44                                  | -
+    --Input Buf               | 3                                   | -
     --Output Buf              | 40                                  | -
     --Inout Buf               | 1                                   | -
   DSP                         | 1/10                                | 10%
-    --MULTALU36X18            | 1
+    --MULT18X18               | 2
   ================================================================================
 
 
@@ -77,7 +77,7 @@
   Clock Resource| Usage         | Utilization 
   ------------------------------------------
   PRIMARY       | 2/8           | 25%
-  LW            | 1/8           | 13%
+  LW            | 0/8           | 0%
   GCLK_PIN      | 3/3           | 100%
   rPLL          | 1/2           | 50%
   ==========================================
@@ -88,9 +88,8 @@
   -------------------------------------------
   Signal         | Global Clock   | Location
   -------------------------------------------
-  CLK_d          | PRIMARY        |  TR TL BR BL
+  CLK_d          | PRIMARY        |  TR BL
   LARGE_LCD_CK_d | PRIMARY        |  BR BL
-  rst            | LW             |  -
   ===========================================
 
 
@@ -139,7 +138,7 @@ FLASH_MOSI        | -         | 61/1          | Y          | out   | IOR11[B] | 
 TF_CS             | -         | 38/2          | Y          | io    | IOB31[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
 TF_MOSI           | -         | 37/2          | Y          | io    | IOB31[A] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
 TF_SCLK           | -         | 36/2          | Y          | io    | IOB29[B] | GCLKC_4         | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
-TF_MISO           | -         | 39/2          | Y          | io    | IOB33[A] | -               | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8       
+TF_MISO           | -         | 39/2          | Y          | io    | IOB33[A] | -               | LVCMOS18   | 8     | UP        | NA        | NONE       | OFF        | NA         | NA              | NA            | 1.8       
 GPIO[0]           | -         | 25/2          | Y          | io    | IOB8[A]  | -               | LVCMOS18   | 8     | UP        | NA        | NONE       | OFF        | NA         | NA              | NA            | 1.8       
 GPIO[1]           | -         | 26/2          | Y          | io    | IOB8[B]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
 GPIO[2]           | -         | 27/2          | Y          | io    | IOB11[A] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
@@ -201,7 +200,7 @@ Loc./Bank| Signal            | Dir.  | Site     | CFG             | IO Type  | D
 36/2     | TF_SCLK           | out   | IOB29[B] | GCLKC_4         | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
 37/2     | TF_MOSI           | out   | IOB31[A] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
 38/2     | TF_CS             | out   | IOB31[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
-39/2     | TF_MISO           | in    | IOB33[A] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+39/2     | TF_MISO           | io    | IOB33[A] | -               | LVCMOS18 | 8     | UP        | NA        | NONE       | OFF        | NA         | NA              | NA            | 1.8  
 40/2     | LARGE_LCD_HS      | out   | IOB33[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
 41/2     | LARGE_LCD_B[7]    | out   | IOB41[A] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
 42/2     | LARGE_LCD_B[6]    | out   | IOB41[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  

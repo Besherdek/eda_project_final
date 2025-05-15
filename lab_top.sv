@@ -107,10 +107,10 @@ module lab_top
 
     //------------------------------------------------------------------------
 
-    function check_freq (input [18:0] freq_100, input [18:0] freq_100_input);
+    function check_freq (input [18:0] freq_100, input [18:0] freq_100_input, input [4:0] thresh);
 
-       check_freq = (freq_100_input > freq_100 * 97 / 100) & 
-                    (freq_100_input < freq_100 * 103 / 100);
+       check_freq = (freq_100_input > freq_100 * (100 - thresh) / 100) & 
+                    (freq_100_input < freq_100 * (100 + thresh) / 100);
 
     endfunction
 
@@ -126,75 +126,432 @@ module lab_top
 
     logic [18:0] freq_100_input;
     assign freq_100_input = dist_to_freq(distance);
-    logic is_E;
-    assign is_E =  check_freq(freq_100_E, freq_100_input) |
-            check_freq(freq_100_E * 2, freq_100_input) |
-            check_freq(freq_100_E * 4, freq_100_input);
 
     //frequnecy filtering
-    logic d_E;  // Delayed frequnecy
+    logic [18:0] d_freq_100_input;
 
     always_ff @ (posedge clk or posedge rst)
         if (rst)
-            d_E <= 0;
+            d_freq_100_input <= 0;
         else
-            d_E <= is_E;
+            d_freq_100_input <= freq_100_input;
 
-    logic  [17:0] t_cnt;           // Threshold counter
-    logic  [18:0] t_E;  // Thresholded frequnecy
+    logic  [18:0] t_cnt;           // Threshold counter
+    logic  [18:0] t_freq_100_input;  // Thresholded frequnecy
 
     always_ff @ (posedge clk or posedge rst)
         if (rst)
             t_cnt <= 0;
         else
-            if (is_E == d_E)
+            if (freq_100_input == d_freq_100_input)
                 t_cnt <= t_cnt + 1;
             else
                 t_cnt <= 0;
 
     always_ff @ (posedge clk or posedge rst)
         if (rst)
-            t_E <= 0;
+            t_freq_100_input <= 0;
         else
             if (& t_cnt)
-                t_E <= d_E;
+                t_freq_100_input <= d_freq_100_input;
 
-//drawing here
-    always_comb begin
-        red = 0;
-        green = 0;
-        blue = 0;
 
-        //strings and frets
-        if (y >= 31 & y < 34 |
-            y >= 73 & y < 76 |
-            y >= 115 & y < 118 |
-            y >= 157 & y < 160 |
-            y >= 199 & y < 202 |
-            y >= 241 & y < 244 |
-            x >= (screen_width - 1) / 2 - 1 & x <= (screen_width - 1) / 2 + 3 | 
-            x >= (screen_width - 1) / 4 - 2 & x <= (screen_width - 1) / 4 + 2 |
-            x >= ((screen_width - 1) / 4) * 3 + 3 & x <= ((screen_width - 1) / 4) * 3 + 7) begin
-            green = 30;
-        end
+    logic [5:0] fret_0;
+    logic [5:0] fret_1;
+    logic [5:0] fret_2;
+    logic [5:0] fret_3;
+    logic [5:0] fret_4;
 
-        // if ((x - (screen_width - 1) / 8 + 1) * (x - (screen_width - 1) / 8 + 1) + 
-        //     (y - 32) * (y - 32) <= 81) begin
-        //         blue = 30;
-        //         green = 0;
-        //     end
-        //     else begin
-        //         blue = 0;
-        //     end
-    
-        if(t_E) begin
-            if(y >= 241 & y < 244) begin
-                blue = 30;
-            end
-            else begin
-                blue = 0;
+    always_comb begin 
+        fret_0[0] = check_freq(freq_100_E, t_freq_100_input, 3);
+        fret_0[1] = check_freq(freq_100_A, t_freq_100_input, 3);
+        fret_0[2] = check_freq(freq_100_D, t_freq_100_input, 4);
+        fret_0[3] = check_freq(freq_100_G * 2, t_freq_100_input, 3);
+        fret_0[4] = check_freq(freq_100_B * 2, t_freq_100_input, 3);
+        fret_0[5] = check_freq(freq_100_E * 4, t_freq_100_input, 3);
+
+        if(!(|fret_0)) begin
+            fret_1[0] = check_freq(freq_100_F, t_freq_100_input, 3);
+            fret_1[1] = check_freq(freq_100_As, t_freq_100_input, 3);
+            fret_1[2] = check_freq(freq_100_Ds, t_freq_100_input, 3);
+            fret_1[3] = check_freq(freq_100_Gs * 2, t_freq_100_input, 3);
+            fret_1[4] = check_freq(freq_100_C * 2, t_freq_100_input, 3);
+            fret_1[5] = check_freq(freq_100_F * 4, t_freq_100_input, 5);
+
+            if(!(|fret_1)) begin
+                fret_2[0] = check_freq(freq_100_Fs, t_freq_100_input, 3);
+                fret_2[1] = check_freq(freq_100_B, t_freq_100_input, 3);
+                fret_2[2] = check_freq(freq_100_E * 2, t_freq_100_input, 3);
+                fret_2[3] = check_freq(freq_100_A * 2, t_freq_100_input, 3);
+                fret_2[4] = check_freq(freq_100_Cs * 2, t_freq_100_input, 3);
+                fret_2[5] = check_freq(freq_100_Fs * 4, t_freq_100_input, 5);
+                
+                if(!(|fret_2)) begin
+                    fret_3[0] = check_freq(freq_100_G, t_freq_100_input, 3);
+                    fret_3[1] = check_freq(freq_100_C, t_freq_100_input, 3);
+                    fret_3[2] = check_freq(freq_100_F * 2, t_freq_100_input, 3);
+                    fret_3[3] = check_freq(freq_100_As * 2, t_freq_100_input, 3);
+                    fret_3[4] = check_freq(freq_100_D * 2, t_freq_100_input, 3);
+                    fret_3[5] = check_freq(freq_100_G * 4, t_freq_100_input, 5);
+                    
+                    if(!(|fret_3)) begin
+                        fret_4[0] = check_freq(freq_100_Gs, t_freq_100_input, 3);
+                        fret_4[1] = check_freq(freq_100_Cs, t_freq_100_input, 3);
+                        fret_4[2] = check_freq(freq_100_Fs * 2, t_freq_100_input, 3);
+                        fret_4[3] = check_freq(freq_100_B * 2, t_freq_100_input, 3);
+                        fret_4[4] = check_freq(freq_100_Ds * 2, t_freq_100_input, 5);
+                        fret_4[5] = check_freq(freq_100_Gs * 4, t_freq_100_input, 5);
+                    end
+                end
             end
         end
     end
+
+//drawing here
+    // always_comb begin
+    //     red = 0;
+    //     green = 0;
+    //     blue = 0;
+
+    //     //strings and frets
+    //     if (y >= 31 & y < 34 |
+    //         y >= 73 & y < 76 |
+    //         y >= 115 & y < 118 |
+    //         y >= 157 & y < 160 |
+    //         y >= 199 & y < 202 |
+    //         y >= 241 & y < 244 |
+    //         x >= (screen_width - 1) / 2 - 1 & x <= (screen_width - 1) / 2 + 3 | 
+    //         x >= (screen_width - 1) / 4 - 2 & x <= (screen_width - 1) / 4 + 2 |
+    //         x >= ((screen_width - 1) / 4) * 3 + 3 & x <= ((screen_width - 1) / 4) * 3 + 7) begin
+    //         green = 30;
+    //     end
+
+
+    //     if(|fret_0) begin
+    //         if (fret_0[0]) begin
+    //             if (y >= 31 & y < 34) begin
+    //                 blue = 30;
+    //             end else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_0[1]) begin
+    //             if (y >= 73 & y < 76) begin
+    //                 blue = 30;
+    //             end else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_0[2]) begin
+    //             if (y >= 115 & y < 118) begin
+    //                 blue = 30;
+    //             end else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_0[3]) begin
+    //             if (y >= 157 & y < 160) begin
+    //                 blue = 30;
+    //             end else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_0[4]) begin
+    //             if (y >= 199 & y < 202) begin
+    //                 blue = 30;
+    //             end else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_0[5]) begin
+    //             if (y >= 241 & y < 244) begin
+    //                 blue = 30;
+    //             end else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //     end else if(|fret_1) begin
+    //         if (fret_1[0]) begin
+    //             if ((x - (screen_width - 1) / 8 + 1) * (x - (screen_width - 1) / 8 + 1) + 
+    //                 (y - 32) * (y - 32) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_1[1]) begin
+    //             if ((x - (screen_width - 1) / 8 + 1) * (x - (screen_width - 1) / 8 + 1) + 
+    //                 (y - 74) * (y - 74) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_1[2]) begin
+    //             if ((x - (screen_width - 1) / 8 + 1) * (x - (screen_width - 1) / 8 + 1) + 
+    //                 (y - 116) * (y - 116) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_1[3]) begin
+    //             if ((x - (screen_width - 1) / 8 + 1) * (x - (screen_width - 1) / 8 + 1) + 
+    //                 (y - 158) * (y - 158) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_1[4]) begin
+    //             if ((x - (screen_width - 1) / 8 + 1) * (x - (screen_width - 1) / 8 + 1) + 
+    //                 (y - 200) * (y - 200) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_1[5]) begin
+    //             if ((x - (screen_width - 1) / 8 + 1) * (x - (screen_width - 1) / 8 + 1) + 
+    //                 (y - 242) * (y - 242) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //     end else if(|fret_2) begin
+    //         if (fret_2[0]) begin
+    //             if ((x - (screen_width - 1) / 8 * 3 + 1) * (x - (screen_width - 1) / 8 * 3 + 1) + 
+    //                 (y - 32) * (y - 32) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_2[1]) begin
+    //             if ((x - (screen_width - 1) / 8 * 3 + 1) * (x - (screen_width - 1) / 8 * 3 + 1) + 
+    //                 (y - 74) * (y - 74) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_2[2]) begin
+    //             if ((x - (screen_width - 1) / 8 * 3 + 1) * (x - (screen_width - 1) / 8 * 3 + 1) + 
+    //                 (y - 116) * (y - 116) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_2[3]) begin
+    //             if ((x - (screen_width - 1) / 8 * 3 + 1) * (x - (screen_width - 1) / 8 * 3 + 1) + 
+    //                 (y - 158) * (y - 158) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_2[4]) begin
+    //             if ((x - (screen_width - 1) / 8 * 3 + 1) * (x - (screen_width - 1) / 8 * 3 + 1) + 
+    //                 (y - 200) * (y - 200) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_2[5]) begin
+    //             if ((x - (screen_width - 1) / 8 * 3 + 1) * (x - (screen_width - 1) / 8 * 3 + 1) + 
+    //                 (y - 242) * (y - 242) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //     end else if(|fret_3) begin
+    //         if (fret_3[0]) begin
+    //             if ((x - (screen_width - 1) / 8 * 5 + 1) * (x - (screen_width - 1) / 8 * 5 + 1) + 
+    //                 (y - 32) * (y - 32) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_3[1]) begin
+    //             if ((x - (screen_width - 1) / 8 * 5 + 1) * (x - (screen_width - 1) / 8 * 5 + 1) + 
+    //                 (y - 74) * (y - 74) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_3[2]) begin
+    //             if ((x - (screen_width - 1) / 8 * 5 + 1) * (x - (screen_width - 1) / 8 * 5 + 1) + 
+    //                 (y - 116) * (y - 116) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_3[3]) begin
+    //             if ((x - (screen_width - 1) / 8 * 5 + 1) * (x - (screen_width - 1) / 8 * 5 + 1) + 
+    //                 (y - 158) * (y - 158) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_3[4]) begin
+    //             if ((x - (screen_width - 1) / 8 * 5 + 1) * (x - (screen_width - 1) / 8 * 5 + 1) + 
+    //                 (y - 200) * (y - 200) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_3[5]) begin
+    //             if ((x - (screen_width - 1) / 8 * 5 + 1) * (x - (screen_width - 1) / 8 * 5 + 1) + 
+    //                 (y - 242) * (y - 242) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //     end else if(|fret_4) begin
+    //         if (fret_4[0]) begin
+    //             if ((x - (screen_width - 1) / 8 * 7 + 1) * (x - (screen_width - 1) / 8 * 7 + 1) + 
+    //                 (y - 32) * (y - 32) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_4[1]) begin
+    //             if ((x - (screen_width - 1) / 8 * 7 + 1) * (x - (screen_width - 1) / 8 * 7 + 1) + 
+    //                 (y - 74) * (y - 74) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_4[2]) begin
+    //             if ((x - (screen_width - 1) / 8 * 7 + 1) * (x - (screen_width - 1) / 8 * 7 + 1) + 
+    //                 (y - 116) * (y - 116) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_4[3]) begin
+    //             if ((x - (screen_width - 1) / 8 * 7 + 1) * (x - (screen_width - 1) / 8 * 7 + 1) + 
+    //                 (y - 158) * (y - 158) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_4[4]) begin
+    //             if ((x - (screen_width - 1) / 8 * 7 + 1) * (x - (screen_width - 1) / 8 * 7 + 1) + 
+    //                 (y - 200) * (y - 200) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //         if (fret_4[5]) begin
+    //             if ((x - (screen_width - 1) / 8 * 7 + 1) * (x - (screen_width - 1) / 8 * 7 + 1) + 
+    //                 (y - 242) * (y - 242) <= 81) begin
+    //                     blue = 30;
+    //                     green = 0;
+    //                 end
+    //             else begin
+    //                 blue = 0;
+    //             end
+    //         end
+    //     end else if(t_freq_100_input == 0) begin
+    //         blue = 0;
+    //     end
+    // end
+
+    logic [18:0] x_o;
+    logic [18:0] y_o;
+    logic [18:0] a;
+    logic [18:0] b;
+    always_comb begin
+        red = 31;
+        green = 63;
+        blue = 31;
+
+        //strings and frets
+        if (y >= 68 & y < 70 & x >= 5 & x <= 474 |
+            y >= 96 & y < 98 & x >= 5 & x <= 474 |
+            y >= 124 & y < 126 & x >= 5 & x <= 474|
+            y >= 152 & y < 154 & x >= 5 & x <= 474|
+            y >= 180 & y < 182 & x >= 5 & x <= 474| 
+            x >= 474 & x <= 478 & y >= 68 & y <= 182| 
+            x >= 2 & x <= 5 & y >= 68 & y <= 182 )
+            begin //added line for C
+            red = 0;
+            green = 0;
+            blue = 0;
+        end
+        x_o = (screen_width - 1) / 12;
+        y_o = 82;
+        a = 4;
+        b = 6;
+        if ((x - x_o)*(x - x_o)/(b*b) + (y - y_o)*(y-y_o)/(a*a) <= 9) begin
+            red = 0;
+            green = 0;
+            blue = 0;
+        end   
+    end 
+        
+
 
 endmodule
