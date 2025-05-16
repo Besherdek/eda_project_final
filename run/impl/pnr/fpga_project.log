@@ -7,6 +7,8 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
+WARN  (TA1132) :  'i_lab_top/n412_5' was determined to be a clock but was not created.
+WARN  (TA1132) :  'tm_key[1]' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -25,5 +27,5 @@ Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_fin
 Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.rpt.html" completed
 Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.rpt.txt" completed
 Generate file "R:\Applications\Gowin\basics-graphics-music\labs\3_music\proj_final\run\impl\pnr\fpga_project.tr.html" completed
-Thu May 15 13:43:38 2025
+Fri May 16 21:10:08 2025
 
